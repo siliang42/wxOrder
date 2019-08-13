@@ -1,15 +1,15 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false
+    password: 321123
+    url: jdbc:mysql://192.168.146.101:3306/sell?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
   jpa:
     show-sql: true
   jackson:
     default-property-inclusion: non_null
   redis:
-    host: 127.0.0.1
+    host: 192.168.146.101
     port: 6379
 server:
   context-path: /sell
